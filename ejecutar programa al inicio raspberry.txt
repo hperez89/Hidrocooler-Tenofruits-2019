@@ -1,0 +1,36 @@
+en la terminal ejecutar "sudo nano /etc/profile"
+
+
+y agregar
+
+sudo python3 SPSI/contador_botellas.py&
+
+
+
+===========================================================
+desactivar protector pantalla raspberry NOOBS OS
+
+Primero abrimos una terminal e iniciamos sesión como root (con “su” o “sudo su” y su contraseña) luego con el editor de texto 
+nano editamos el archivo: 
+“/etc/lightdm/lightdm.conf” de la siguiente manera:
+
+sudo nano /etc/lightdm/lightdm.conf
+
+Luego buscamos
+
+[SeatDefault] o Seat configuration
+
+Insertamos la siguiente linea de codigo
+
+xserver-command=X -s 0 dpms
+
+
+========================================================
+instalar odbc
+> sudo su  
+> wget https://gallery.technet.microsoft.com/ODBC-Driver-13-for-Ubuntu-b87369f0/file/154097/2/installodbc.sh  
+> sh installodbc.sh 
+
+
+instalar pyodbc (modulo para python)
+> sudo -H pip install pyodbc

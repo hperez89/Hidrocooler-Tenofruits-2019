@@ -1,0 +1,16 @@
+parar Motor1 si hay presencia en Sensor2   #
+parar Motor2 si hay presencia en Sensor3   #
+parar Motor3 si hay presencia en Sensor4   #
+parar Motor5 si hay presencia en Sensor6   #
+
+parar motor7 cadena giro si hay presencia en Sensor8 (presencia bin)
+si hay presencia Sensor7 activar salida Motor8
+si hay presencia Sensor9 activar salida Motor8_i (invertir giro) y parar Motor7 cadena giro
+
+parar Motor9 si hay presencia en Sensor11 y s10    #
+parar Motor10 si hay presencia en Sensor12 y s11   #
+parar Motor11 si hay presencia en Sensor13 y s12   #
+parar Motor12 si hay presencia en Sensor13         #
+
+
+CONSIDERAR 3 SEÑALES DE FALLA TERMICA (MOTOR, 2 VARIADOR)
